@@ -106,3 +106,8 @@ venv.bak/
 # IDE
 .idea
 .vscode
+
+# Folders
+dist/
+robotframework_csvlib.egg-info/
+build/
