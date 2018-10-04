@@ -1,7 +1,7 @@
 import csv
 
 
-class CSVLibrary(object):
+class CSVLib(object):
 
     """ Reads a given CSV file and returns it as a dictionary. """
     def read_csv_as_dictionary(self, filename, key_column, value_columns, delimiter='\n'):
@@ -31,7 +31,7 @@ class CSVLibrary(object):
         return output
 
     """ Reads a given CSV file and returns it as a single list containing all values. """
-    def read_csv_file_as_single_list(self, filename, delimiter='\n'):
+    def read_csv_as_single_list(self, filename, delimiter='\n'):
         file = open(filename, 'r')
         csvfile = csv.reader(file, delimiter=delimiter)
         output = []
