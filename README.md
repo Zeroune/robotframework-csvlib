@@ -9,5 +9,3 @@ Read CSV AS Single List
         Filepath
         Delimiter (optional)
 ```
-
-:)
