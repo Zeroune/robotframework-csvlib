@@ -30,3 +30,24 @@ Read CSV As Dictionary
         A dictionary with the key column a key and the value column(s) as value. 
         If there are multiple value columns the value will be a list containing all values.
 ```
+
+### Example
+```
+*** Settings ***
+Library  CSVLib
+
+*** Test Cases ***
+Test CSV
+	${singlelist}=		Read CSV As Single List		test.csv
+	log to console		${singlelist}
+
+	${list}=		read csv as list		test.csv
+	log to console		${list}
+
+	${dict}=		read csv as dictionary		test_dict.csv		Animal		Legs		,
+	log to console		${dict}
+
+	${value}=		create list			Legs			Eyes
+	${dictWList}=		read csv as dictionary		test_dict1.csv		Animal		${value}	,
+	log to console		${dictWList}
+```
