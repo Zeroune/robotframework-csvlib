@@ -5,7 +5,7 @@ class CSVLib(object):
 
     """ Reads a given CSV file and returns it as a dictionary. """
     def read_csv_as_dictionary(self, filename, key_column, value_columns, delimiter='\n'):
-        file = open(filename, 'r')
+        file = open(filename, 'r', encoding='utf-8-sig')
         csvfile = csv.DictReader(file, delimiter=delimiter)
         output = {}
         for row in csvfile:
@@ -22,7 +22,7 @@ class CSVLib(object):
 
     """ Reads a given CSV file and returns it as a list containing all rows as list. """
     def read_csv_as_list(self, filename, delimiter='\n'):
-        file = open(filename, 'r')
+        file = open(filename, 'r', encoding='utf-8-sig')
         csvfile = csv.reader(file, delimiter=delimiter)
         output = []
         for row in csvfile:
@@ -32,7 +32,7 @@ class CSVLib(object):
 
     """ Reads a given CSV file and returns it as a single list containing all values. """
     def read_csv_as_single_list(self, filename, delimiter='\n'):
-        file = open(filename, 'r')
+        file = open(filename, 'r', encoding='utf-8-sig')
         csvfile = csv.reader(file, delimiter=delimiter)
         output = []
         for row in csvfile:
