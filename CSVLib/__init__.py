@@ -26,6 +26,7 @@ class CSVLib(object):
         csvfile = csv.reader(file, delimiter=delimiter)
         output = []
         for row in csvfile:
+            row = row[0].split(',')
             output.append(row)
         file.close()
         return output
