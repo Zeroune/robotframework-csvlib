@@ -1,6 +1,10 @@
 # robotframework-csvlib
 CSV library for robotframework written in Python 3
 
+## Installation
+```
+pip install robotframework-csvlib
+```
 
 ## Quick Keyword Overview
 ```

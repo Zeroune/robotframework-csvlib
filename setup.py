@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="robotframework-csvlib",
-    version="1.0.1",
+    version="1.0.2",
     author="Zeroune",
     description="CSV library for robotframework written in Python 3",
     long_description=long_description,
